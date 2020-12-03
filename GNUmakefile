@@ -6,6 +6,9 @@ PROGS = mkcramfs cramfsck
 
 all: $(PROGS)
 
+install: $(PROGS)
+	cp $(PROGS) /usr/local/bin/
+
 distclean clean:
 	rm -f $(PROGS)
 
